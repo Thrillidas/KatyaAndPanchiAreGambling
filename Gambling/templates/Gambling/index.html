@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Our's bets</title>
+</head>
+<body>
+    <h1>Our Bets</h1>
+    <ul>
+        {% for apuestas in apuestas %}
+        <li>{{ apuestas }}</li>
+        {% endfor %}
+
+    </ul>
+    <a href="{% url 'add' %}">Add new bet</a>
+</body>
+</html>

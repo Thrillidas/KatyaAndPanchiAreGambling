@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add a bet</title>
+</head>
+<body>
+    <h1>Add a bet</h1>
+    <form action="{% url 'add' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit">
+    </form>
+
+    <a href="{% url 'index' %}">Bet list</a>
+</body>
+</html>
